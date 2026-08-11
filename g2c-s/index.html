@@ -90,9 +90,7 @@
     splash.style.display = 'block';
 
     function hideSplash() {
-      setTimeout(function () {
-        splash.style.display = 'none';
-      }, 150);
+      splash.style.display = 'none';
     }
 
     // 輪詢等待 Cocos Creator 3 引擎載入，監聽場景啟動後隱藏 splash
@@ -103,7 +101,7 @@
       }
       setTimeout(waitForEngine, 50);
     }
-    setTimeout(waitForEngine, 100);
+    waitForEngine();
   })();
   </script>
 </body>
